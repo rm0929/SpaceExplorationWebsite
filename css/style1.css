@@ -1,0 +1,84 @@
+/* main page style */
+
+.defination-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    background: linear-gradient(-65deg, #000, rgb(56, 55, 55));
+    color: #fff;
+}
+
+/* list of words */
+
+.planets_form {
+    border-radius: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.list {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.list li {
+    list-style: none;
+    text-align: center;
+    border-bottom: 5px solid #fff;
+    padding: 10% 0;
+}
+
+.planets-btn{
+    width: 100%;
+    border: none;
+    font-size: 20px;
+}
+
+.planets-btn:hover{
+    border:none;
+    color: black;
+}
+
+/* card */
+
+.card-section {
+    display: flex;
+    justify-content: center;
+}
+
+.def-card {
+    margin-top: 5%;
+    width: 500px;
+    height: 600px;
+    border: 2px solid white;
+    border-radius: 40px;
+    padding: 15px;
+    /* box-sizing: border-box; */
+}
+
+.def-card h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.def-card .img {
+    display: flex;
+    justify-content: center;
+}
+
+.def-card .img img {
+    width: 50%;
+    height: 70%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.def-card .meaning {
+    margin-top: 50px;
+}
+.studylinks{
+    color: yellow;
+    text-decoration: none;
+}

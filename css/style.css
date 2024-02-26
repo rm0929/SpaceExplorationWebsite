@@ -1,0 +1,455 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS of Navbar */
+
+nav {
+    background-color: black;
+    height: 65px;
+}
+
+.logo-div {
+    float: left;
+}
+
+.logo {
+    width: 200px;
+    height: 60px;
+}
+
+.nav-list {
+    display: block;
+    float: right;
+    padding-top: 10px;
+}
+
+.nav-item {
+    display: inline-block;
+    list-style: none;
+    padding: 0 16px;
+    padding-top: 15px;
+    text-align: center;
+    height: 45px;
+    transition: 0.4s ease-in-out;
+}
+
+
+.nav-item:hover {
+    background-color: white;
+}
+
+.nav-item:hover a {
+    color: black;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.nav-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+/* Home Section */
+
+.slideshow-container {
+    position: relative;
+}
+
+.mySlides {
+    display: none;
+    padding: 80px;
+    text-align: center;
+    height: 300px;
+}
+
+#slide-1 {
+    background-image: url('https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2019/03/saturn_at_equinox/19304018-1-eng-GB/Saturn_at_equinox_pillars.jpg');
+    background-size: 100%;
+    object-position: top;
+}
+
+#slide-2 {
+    background-image: url('https://d.newsweek.com/en/full/1854805/fiery-space-rock.jpg');
+    background-size: 100%;
+    object-position: top;
+}
+
+#slide-3 {
+    background-image: url('https://astronomy.com/~/media/15303C48726143ACB1E4D4BE85E1EFFB.jpg');
+    background-size: 100%;
+    object-position: top;
+}
+
+.content {
+    height: 200px;
+    padding-top: 100px;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+}
+
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background: rgb(15, 15, 15);
+    opacity: 80%;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+q {
+    font-size: 25px;
+    font-style: italic;
+    color: #fff;
+}
+
+.author {
+    color: rgb(10, 46, 250);
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* About Section */
+
+#about {
+    padding: 50px;
+    background-image: url('https://images.unsplash.com/photo-1505506874110-6a7a69069a08?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1887&q=80');
+    color: white;
+}
+
+.about-heading {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.about-content {
+    letter-spacing: 1.5px;
+    font-size: 25px;
+}
+
+/* POD section */
+
+#pod {
+    background-color: #0f0f0f;
+    color: white;
+    padding: 20px 0;
+}
+
+.pod-heading {
+    text-align: center;
+    padding-top: 25px;
+    font-size: 35px;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.pod-title {
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 300;
+}
+
+.pod-image-div {
+    background-color: #dbd6d6;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.pod-image {
+    border-radius: 55px;
+    width: 60%;
+    height: 60%;
+}
+
+.pod-explained {
+    display: none;
+    padding: 20px;
+    font-size: 20px;
+    letter-spacing: 1.8px;
+    line-height: 25px;
+}
+
+.btn-toggler {
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.see-more-less {
+    font-size: 15px;
+    padding: 15px 35px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: rgb(71, 70, 70);
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+.see-more-less:hover {
+    background-color: rgb(129, 128, 128);
+}
+
+/* More Information Section */
+
+#info {
+    background-color: #717171;
+    padding-top: 60px;
+    padding-bottom: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.card-1 {
+    margin: auto 40px;
+}
+
+.card-2 {
+    margin: 0px 40px;
+}
+
+.card-1, .card-2 {
+    padding: 100px 0;
+    background: linear-gradient(-65deg, #000, rgb(73, 72, 72));
+    border-radius: 25px;
+}
+
+.card-2 {
+    display: none;
+}
+
+.def, .def-2 {
+    text-align: center;
+    padding-bottom: 50px;
+    color: #fff;
+    text-transform: uppercase;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.click-1, .click-2 {
+    display: flex;
+    justify-content: center;
+}
+
+.click-1 button, .click-2 button {
+    padding: 20px 30px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    transition: 0.5s ease-in-out all;
+}
+
+.click-1 button:hover, .click-2 button:hover {
+    background-color: rgb(158, 157, 157);
+}
+
+.click-1 button a, .click-2 button a {
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.prev-card {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 40px;
+    padding: 7px;
+}
+
+.next-card {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 40px;
+    padding: 7px;
+}
+
+.prev-card:hover, .next-card:hover {
+    background-color: rgb(139, 138, 138);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Most recent discovery */
+
+#recent-discovery {
+    background-color: #252525;
+    color: #fff;
+    padding: 45px 35px;
+}
+
+.discovery-heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.img-div {
+    display: flex;
+    justify-content: center;
+}
+.img-div img {
+    object-fit: cover;
+    width: 80%;
+}
+
+.discovery-p {
+    margin: 25px 0;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.more-info-link {
+    display: block;
+    text-align: end;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.more-info-link:hover {
+    color: rgb(133, 132, 132);
+}
+
+/* Contact US */
+
+#contactUs {
+    padding: 40px;
+    background-color: #1f1c1c;
+    color: white;
+}
+
+.success {
+    text-align: center;
+    font-style: italic;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+form {
+    margin: auto 25%;
+    padding: 20px;
+    background-color: rgb(83, 83, 83);
+    border-radius: 15px;
+}
+
+label, input {
+    display: block;
+    text-align: center;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+label {
+    text-transform: uppercase;
+    margin: 25px 3% 15px 3%;
+    text-align: center;
+}
+
+.input {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border-bottom: 1px solid #fff;
+    color: white;
+    transition: 0.5s ease-in-out;
+    padding: 5px;
+}
+
+input:focus {
+    border-bottom: 2px solid rgb(2, 2, 85);
+    border-radius: 15px;
+}
+
+#subscribe {
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    border-radius: 15px;
+    text-transform: uppercase;
+    transition: 0.5s ease-in-out;
+}
+
+#subscribe:hover {
+    background-color: #bbb;
+}
+
+/* footer */
+
+footer {
+    background-color: #0c0b0b;
+    position: relative;
+}
+
+#logoImg {
+    display: flex;
+    justify-content: center;
+}
+
+.logoImg {
+    opacity: 40%;
+    height: 20%;
+    width: 20%;
+}
+
+.footer-content p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+}
